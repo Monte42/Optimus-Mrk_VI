@@ -1,0 +1,426 @@
+[0.000000] (-) TimerEvent: {}
+[0.001851] (optimus_interfaces) JobQueued: {'identifier': 'optimus_interfaces', 'dependencies': OrderedDict()}
+[0.002445] (optimus_description) JobQueued: {'identifier': 'optimus_description', 'dependencies': OrderedDict([('optimus_interfaces', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces')])}
+[0.002825] (optimus_bringup) JobQueued: {'identifier': 'optimus_bringup', 'dependencies': OrderedDict([('optimus_interfaces', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces'), ('optimus_description', '/home/optimus/optimus_v6.3_ws/install/optimus_description')])}
+[0.003190] (optimus_interfaces) JobStarted: {'identifier': 'optimus_interfaces'}
+[0.099152] (-) TimerEvent: {}
+[0.199772] (-) TimerEvent: {}
+[0.302282] (-) TimerEvent: {}
+[0.303786] (optimus_interfaces) JobProgress: {'identifier': 'optimus_interfaces', 'progress': 'cmake'}
+[0.309848] (optimus_interfaces) JobProgress: {'identifier': 'optimus_interfaces', 'progress': 'build'}
+[0.313772] (optimus_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'optimus'), ('SSH_CLIENT', '192.168.1.27 51314 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/optimus'), ('OLDPWD', '/home/optimus'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b4bace40-0098-43ef-833a-e33b33a25616.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'optimus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.27 51314 192.168.1.31 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble')]), 'shell': False}
+[0.402530] (-) TimerEvent: {}
+[0.503404] (-) TimerEvent: {}
+[0.604434] (-) TimerEvent: {}
+[0.669254] (optimus_interfaces) StdoutLine: {'line': b'[  1%] Built target optimus_interfaces__cpp\n'}
+[0.702805] (optimus_interfaces) StdoutLine: {'line': b'[ 12%] Built target optimus_interfaces__rosidl_generator_c\n'}
+[0.709856] (-) TimerEvent: {}
+[0.754270] (optimus_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_optimus_interfaces\n'}
+[0.810058] (-) TimerEvent: {}
+[0.874766] (optimus_interfaces) StdoutLine: {'line': b'[ 34%] Built target optimus_interfaces__rosidl_typesupport_cpp\n'}
+[0.877227] (optimus_interfaces) StdoutLine: {'line': b'[ 29%] Built target optimus_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.908891] (optimus_interfaces) StdoutLine: {'line': b'[ 45%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.911017] (-) TimerEvent: {}
+[0.935700] (optimus_interfaces) StdoutLine: {'line': b'[ 56%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.012676] (-) TimerEvent: {}
+[1.013658] (optimus_interfaces) StdoutLine: {'line': b'[ 67%] Built target optimus_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.034950] (optimus_interfaces) StdoutLine: {'line': b'[ 78%] Built target optimus_interfaces__rosidl_typesupport_c\n'}
+[1.112866] (-) TimerEvent: {}
+[1.148048] (optimus_interfaces) StdoutLine: {'line': b'[ 78%] Built target optimus_interfaces\n'}
+[1.213089] (-) TimerEvent: {}
+[1.256956] (optimus_interfaces) StdoutLine: {'line': b'[ 80%] Built target optimus_interfaces__py\n'}
+[1.313281] (-) TimerEvent: {}
+[1.374901] (optimus_interfaces) StdoutLine: {'line': b'[ 89%] Built target optimus_interfaces__rosidl_generator_py\n'}
+[1.413556] (-) TimerEvent: {}
+[1.499218] (optimus_interfaces) StdoutLine: {'line': b'[ 92%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.507148] (optimus_interfaces) StdoutLine: {'line': b'[ 98%] Built target optimus_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.511543] (optimus_interfaces) StdoutLine: {'line': b'[100%] Built target optimus_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.514725] (-) TimerEvent: {}
+[1.615619] (-) TimerEvent: {}
+[1.716300] (-) TimerEvent: {}
+[1.817141] (-) TimerEvent: {}
+[1.918002] (-) TimerEvent: {}
+[2.018825] (-) TimerEvent: {}
+[2.119751] (-) TimerEvent: {}
+[2.220639] (-) TimerEvent: {}
+[2.321601] (-) TimerEvent: {}
+[2.422313] (-) TimerEvent: {}
+[2.522997] (-) TimerEvent: {}
+[2.542554] (optimus_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.546382] (optimus_interfaces) StdoutLine: {'line': b'writing optimus_interfaces.egg-info/PKG-INFO\n'}
+[2.547731] (optimus_interfaces) StdoutLine: {'line': b'writing dependency_links to optimus_interfaces.egg-info/dependency_links.txt\n'}
+[2.549139] (optimus_interfaces) StdoutLine: {'line': b'writing top-level names to optimus_interfaces.egg-info/top_level.txt\n'}
+[2.562503] (optimus_interfaces) StdoutLine: {'line': b"reading manifest file 'optimus_interfaces.egg-info/SOURCES.txt'\n"}
+[2.566078] (optimus_interfaces) StdoutLine: {'line': b"writing manifest file 'optimus_interfaces.egg-info/SOURCES.txt'\n"}
+[2.623300] (-) TimerEvent: {}
+[2.699236] (optimus_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_optimus_interfaces_egg\n'}
+[2.723540] (-) TimerEvent: {}
+[2.751533] (optimus_interfaces) CommandEnded: {'returncode': 0}
+[2.823682] (-) TimerEvent: {}
+[2.925318] (-) TimerEvent: {}
+[3.026171] (-) TimerEvent: {}
+[3.126829] (-) TimerEvent: {}
+[3.227495] (-) TimerEvent: {}
+[3.328219] (-) TimerEvent: {}
+[3.410003] (optimus_interfaces) JobProgress: {'identifier': 'optimus_interfaces', 'progress': 'install'}
+[3.428525] (-) TimerEvent: {}
+[3.447458] (optimus_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'optimus'), ('SSH_CLIENT', '192.168.1.27 51314 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/optimus'), ('OLDPWD', '/home/optimus'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b4bace40-0098-43ef-833a-e33b33a25616.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'optimus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.27 51314 192.168.1.31 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble')]), 'shell': False}
+[3.494449] (optimus_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.502310] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/ament_index/resource_index/rosidl_interfaces/optimus_interfaces\n'}
+[3.503516] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.504545] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.505638] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/control_optimus.h\n'}
+[3.506498] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.507363] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__type_support.h\n'}
+[3.508119] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__functions.c\n'}
+[3.509023] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__functions.h\n'}
+[3.510133] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__struct.h\n'}
+[3.510844] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.511576] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.512914] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__functions.h\n'}
+[3.514207] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__functions.c\n'}
+[3.515431] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__struct.h\n'}
+[3.516188] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__type_support.h\n'}
+[3.516799] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/autonomous_driver.h\n'}
+[3.517287] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.517751] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.518243] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__struct.h\n'}
+[3.518849] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__struct.h\n'}
+[3.519383] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.h\n'}
+[3.519751] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__functions.c\n'}
+[3.520105] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__type_support.h\n'}
+[3.520408] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__functions.c\n'}
+[3.520684] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__functions.h\n'}
+[3.520953] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__functions.h\n'}
+[3.521217] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.521513] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/ultra_sonic_range.h\n'}
+[3.521891] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/motor_driver.h\n'}
+[3.522176] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/library_path.sh\n'}
+[3.522446] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/library_path.dsv\n'}
+[3.528624] (-) TimerEvent: {}
+[3.581043] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_generator_c.so\n'}
+[3.583680] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.584634] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.585556] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.586639] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__rosidl_typesupport_fastrtps_c.h\n'}
+[3.587511] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.588328] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.589128] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__rosidl_typesupport_fastrtps_c.h\n'}
+[3.589813] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.590241] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.590737] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__rosidl_typesupport_fastrtps_c.h\n'}
+[3.591335] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__rosidl_typesupport_fastrtps_c.h\n'}
+[3.591803] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.606832] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.608130] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.608674] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.609147] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.609623] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__type_support.c\n'}
+[3.610142] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__rosidl_typesupport_introspection_c.h\n'}
+[3.610557] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.610930] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.611299] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__type_support.c\n'}
+[3.611664] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__rosidl_typesupport_introspection_c.h\n'}
+[3.612106] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.612487] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.612923] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__rosidl_typesupport_introspection_c.h\n'}
+[3.613379] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__rosidl_typesupport_introspection_c.h\n'}
+[3.613871] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__type_support.c\n'}
+[3.614253] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.c\n'}
+[3.614600] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.617145] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.620911] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_c.so\n'}
+[3.622160] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.622676] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.623096] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.627445] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__builder.hpp\n'}
+[3.628124] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__traits.hpp\n'}
+[3.629016] (-) TimerEvent: {}
+[3.629511] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__struct.hpp\n'}
+[3.630407] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/control_optimus.hpp\n'}
+[3.631201] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.631675] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.632081] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__struct.hpp\n'}
+[3.632472] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__builder.hpp\n'}
+[3.632885] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__traits.hpp\n'}
+[3.633338] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/autonomous_driver.hpp\n'}
+[3.633855] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.634303] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.634691] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__traits.hpp\n'}
+[3.635092] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__builder.hpp\n'}
+[3.635455] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__struct.hpp\n'}
+[3.635764] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__builder.hpp\n'}
+[3.636325] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__struct.hpp\n'}
+[3.636913] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__traits.hpp\n'}
+[3.637392] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/motor_driver.hpp\n'}
+[3.638022] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/ultra_sonic_range.hpp\n'}
+[3.638562] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.639162] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.639527] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.639900] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/dds_fastrtps\n'}
+[3.640448] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.641119] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.641906] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.642401] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.647470] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/dds_fastrtps\n'}
+[3.648097] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.648666] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.649115] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/dds_fastrtps\n'}
+[3.649601] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.650816] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.651563] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.652282] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.652819] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces\n'}
+[3.653351] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action\n'}
+[3.655468] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail\n'}
+[3.657156] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.657870] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/action/detail/control_optimus__type_support.cpp\n'}
+[3.658524] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv\n'}
+[3.659069] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail\n'}
+[3.659603] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__type_support.cpp\n'}
+[3.660203] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/srv/detail/autonomous_driver__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.660683] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg\n'}
+[3.661225] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail\n'}
+[3.661880] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.662433] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.663286] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.cpp\n'}
+[3.663939] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/include/optimus_interfaces/optimus_interfaces/msg/detail/motor_driver__type_support.cpp\n'}
+[3.664511] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.665370] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.666171] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/pythonpath.sh\n'}
+[3.666862] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/pythonpath.dsv\n'}
+[3.667446] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info\n'}
+[3.668044] (optimus_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.668678] (optimus_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.669493] (optimus_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.671117] (optimus_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.672805] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces\n'}
+[3.673621] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.674436] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/_optimus_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.675160] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/liboptimus_interfaces__rosidl_generator_py.so\n'}
+[3.675826] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/action\n'}
+[3.676354] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/action/_control_optimus_s.c\n'}
+[3.676927] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/action/_control_optimus.py\n'}
+[3.677407] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/action/__init__.py\n'}
+[3.677932] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/srv\n'}
+[3.678385] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/srv/_autonomous_driver_s.c\n'}
+[3.678769] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/srv/_autonomous_driver.py\n'}
+[3.679169] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/srv/__init__.py\n'}
+[3.679584] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg\n'}
+[3.680012] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg/_ultra_sonic_range.py\n'}
+[3.680381] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg/_motor_driver.py\n'}
+[3.680866] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg/_motor_driver_s.c\n'}
+[3.681338] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg/__init__.py\n'}
+[3.681841] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg/_ultra_sonic_range_s.c\n'}
+[3.682302] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.682712] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/_optimus_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.683006] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/_optimus_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.683283] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/__init__.py\n'}
+[3.683567] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.729207] (-) TimerEvent: {}
+[3.829952] (-) TimerEvent: {}
+[3.838208] (optimus_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces'...\n"}
+[3.839755] (optimus_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/action'...\n"}
+[3.840991] (optimus_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/msg'...\n"}
+[3.842429] (optimus_interfaces) StdoutLine: {'line': b"Listing '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/srv'...\n"}
+[3.864993] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.869652] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.874382] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages/optimus_interfaces/optimus_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.878600] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/liboptimus_interfaces__rosidl_generator_py.so\n'}
+[3.880157] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/msg/MotorDriver.idl\n'}
+[3.880767] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/msg/UltraSonicRange.idl\n'}
+[3.881334] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/srv/AutonomousDriver.idl\n'}
+[3.881953] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/action/ControlOptimus.idl\n'}
+[3.882513] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/msg/MotorDriver.msg\n'}
+[3.883064] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/msg/UltraSonicRange.msg\n'}
+[3.883649] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/srv/AutonomousDriver.srv\n'}
+[3.884164] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/srv/AutonomousDriver_Request.msg\n'}
+[3.884754] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/srv/AutonomousDriver_Response.msg\n'}
+[3.885257] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/action/ControlOptimus.action\n'}
+[3.885826] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/ament_index/resource_index/package_run_dependencies/optimus_interfaces\n'}
+[3.886487] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/ament_index/resource_index/parent_prefix_path/optimus_interfaces\n'}
+[3.887020] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/ament_prefix_path.sh\n'}
+[3.887665] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.888142] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/path.sh\n'}
+[3.888625] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/environment/path.dsv\n'}
+[3.889077] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/local_setup.bash\n'}
+[3.889657] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/local_setup.sh\n'}
+[3.890146] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/local_setup.zsh\n'}
+[3.890556] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/local_setup.dsv\n'}
+[3.891045] (optimus_interfaces) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.dsv\n'}
+[3.891957] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/ament_index/resource_index/packages/optimus_interfaces\n'}
+[3.894100] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.895070] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.897521] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.902772] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.905338] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.906321] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.908865] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.909808] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.912260] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.914801] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.915802] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.919149] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.920058] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.921835] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.922854] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.924846] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.925772] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/export_optimus_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.926507] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.928703] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.929340] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.930168] (-) TimerEvent: {}
+[3.931691] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.932951] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.933795] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.934459] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.935156] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfacesConfig.cmake\n'}
+[3.935797] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/cmake/optimus_interfacesConfig-version.cmake\n'}
+[3.937318] (optimus_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.xml\n'}
+[3.944292] (optimus_interfaces) CommandEnded: {'returncode': 0}
+[4.030408] (-) TimerEvent: {}
+[4.131756] (-) TimerEvent: {}
+[4.232991] (-) TimerEvent: {}
+[4.333880] (-) TimerEvent: {}
+[4.434697] (-) TimerEvent: {}
+[4.535421] (-) TimerEvent: {}
+[4.636076] (-) TimerEvent: {}
+[4.737224] (-) TimerEvent: {}
+[4.838103] (-) TimerEvent: {}
+[4.938992] (-) TimerEvent: {}
+[5.043425] (-) TimerEvent: {}
+[5.144883] (-) TimerEvent: {}
+[5.246209] (-) TimerEvent: {}
+[5.340166] (optimus_interfaces) JobEnded: {'identifier': 'optimus_interfaces', 'rc': 0}
+[5.343349] (optimus_description) JobStarted: {'identifier': 'optimus_description'}
+[5.346493] (-) TimerEvent: {}
+[5.447657] (-) TimerEvent: {}
+[5.548659] (-) TimerEvent: {}
+[5.650182] (-) TimerEvent: {}
+[5.751253] (-) TimerEvent: {}
+[5.852015] (-) TimerEvent: {}
+[5.952760] (-) TimerEvent: {}
+[6.053544] (-) TimerEvent: {}
+[6.154330] (-) TimerEvent: {}
+[6.255018] (-) TimerEvent: {}
+[6.355755] (-) TimerEvent: {}
+[6.456461] (-) TimerEvent: {}
+[6.557126] (-) TimerEvent: {}
+[6.657959] (-) TimerEvent: {}
+[6.758672] (-) TimerEvent: {}
+[6.859429] (-) TimerEvent: {}
+[6.960398] (-) TimerEvent: {}
+[7.061906] (-) TimerEvent: {}
+[7.163629] (-) TimerEvent: {}
+[7.265200] (-) TimerEvent: {}
+[7.369875] (-) TimerEvent: {}
+[7.471264] (-) TimerEvent: {}
+[7.572070] (-) TimerEvent: {}
+[7.672865] (-) TimerEvent: {}
+[7.773693] (-) TimerEvent: {}
+[7.874415] (-) TimerEvent: {}
+[7.975114] (-) TimerEvent: {}
+[8.075917] (-) TimerEvent: {}
+[8.177107] (-) TimerEvent: {}
+[8.277999] (-) TimerEvent: {}
+[8.379186] (-) TimerEvent: {}
+[8.480017] (-) TimerEvent: {}
+[8.580723] (-) TimerEvent: {}
+[8.681411] (-) TimerEvent: {}
+[8.782224] (-) TimerEvent: {}
+[8.883144] (-) TimerEvent: {}
+[8.984395] (-) TimerEvent: {}
+[9.018697] (optimus_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/optimus_description', 'build', '--build-base', '/home/optimus/optimus_v6.3_ws/build/optimus_description/build', 'install', '--record', '/home/optimus/optimus_v6.3_ws/build/optimus_description/install.log', '--single-version-externally-managed'], 'cwd': '/home/optimus/optimus_v6.3_ws/src/optimus_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.27 51314 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus', 'TERM_PROGRAM_VERSION': '1.87.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b4bace40-0098-43ef-833a-e33b33a25616.sock', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/optimus/optimus_v6.3_ws/build/optimus_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.27 51314 192.168.1.31 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/optimus_v6.3_ws/build/optimus_description/prefix_override:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup'}, 'shell': False}
+[9.084748] (-) TimerEvent: {}
+[9.186047] (-) TimerEvent: {}
+[9.286748] (-) TimerEvent: {}
+[9.387460] (-) TimerEvent: {}
+[9.488184] (-) TimerEvent: {}
+[9.588887] (-) TimerEvent: {}
+[9.689648] (-) TimerEvent: {}
+[9.790321] (-) TimerEvent: {}
+[9.891001] (-) TimerEvent: {}
+[9.991659] (-) TimerEvent: {}
+[10.092335] (-) TimerEvent: {}
+[10.144671] (optimus_description) StdoutLine: {'line': b'running egg_info\n'}
+[10.147194] (optimus_description) StdoutLine: {'line': b'writing ../../build/optimus_description/optimus_description.egg-info/PKG-INFO\n'}
+[10.148317] (optimus_description) StdoutLine: {'line': b'writing dependency_links to ../../build/optimus_description/optimus_description.egg-info/dependency_links.txt\n'}
+[10.149261] (optimus_description) StdoutLine: {'line': b'writing entry points to ../../build/optimus_description/optimus_description.egg-info/entry_points.txt\n'}
+[10.150264] (optimus_description) StdoutLine: {'line': b'writing requirements to ../../build/optimus_description/optimus_description.egg-info/requires.txt\n'}
+[10.150982] (optimus_description) StdoutLine: {'line': b'writing top-level names to ../../build/optimus_description/optimus_description.egg-info/top_level.txt\n'}
+[10.159828] (optimus_description) StdoutLine: {'line': b"reading manifest file '../../build/optimus_description/optimus_description.egg-info/SOURCES.txt'\n"}
+[10.164744] (optimus_description) StdoutLine: {'line': b"writing manifest file '../../build/optimus_description/optimus_description.egg-info/SOURCES.txt'\n"}
+[10.165529] (optimus_description) StdoutLine: {'line': b'running build\n'}
+[10.166020] (optimus_description) StdoutLine: {'line': b'running build_py\n'}
+[10.167279] (optimus_description) StdoutLine: {'line': b'copying optimus_description/ps4_controller_node.py -> /home/optimus/optimus_v6.3_ws/build/optimus_description/build/lib/optimus_description\n'}
+[10.168870] (optimus_description) StdoutLine: {'line': b'copying optimus_description/optimus_pi_node.py -> /home/optimus/optimus_v6.3_ws/build/optimus_description/build/lib/optimus_description\n'}
+[10.170554] (optimus_description) StdoutLine: {'line': b'running install\n'}
+[10.171831] (optimus_description) StdoutLine: {'line': b'running install_lib\n'}
+[10.176032] (optimus_description) StdoutLine: {'line': b'copying /home/optimus/optimus_v6.3_ws/build/optimus_description/build/lib/optimus_description/ps4_controller_node.py -> /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description\n'}
+[10.177734] (optimus_description) StdoutLine: {'line': b'copying /home/optimus/optimus_v6.3_ws/build/optimus_description/build/lib/optimus_description/optimus_pi_node.py -> /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description\n'}
+[10.180889] (optimus_description) StdoutLine: {'line': b'byte-compiling /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description/ps4_controller_node.py to ps4_controller_node.cpython-310.pyc\n'}
+[10.187119] (optimus_description) StdoutLine: {'line': b'byte-compiling /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description/optimus_pi_node.py to optimus_pi_node.cpython-310.pyc\n'}
+[10.192288] (optimus_description) StdoutLine: {'line': b'running install_data\n'}
+[10.192830] (-) TimerEvent: {}
+[10.194980] (optimus_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.201782] (optimus_description) StdoutLine: {'line': b"removing '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.203581] (optimus_description) StdoutLine: {'line': b'Copying ../../build/optimus_description/optimus_description.egg-info to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus_description-0.0.0-py3.10.egg-info\n'}
+[10.212022] (optimus_description) StdoutLine: {'line': b'running install_scripts\n'}
+[10.288904] (optimus_description) StdoutLine: {'line': b'Installing camera script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.289874] (optimus_description) StdoutLine: {'line': b'Installing lifecycle_manager script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.290692] (optimus_description) StdoutLine: {'line': b'Installing motor_driver script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.291681] (optimus_description) StdoutLine: {'line': b'Installing optimus_pi script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.292677] (optimus_description) StdoutLine: {'line': b'Installing ps4_controller script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.293147] (-) TimerEvent: {}
+[10.294577] (optimus_description) StdoutLine: {'line': b'Installing ultra_sonic_sensor script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[10.295904] (optimus_description) StdoutLine: {'line': b"writing list of installed files to '/home/optimus/optimus_v6.3_ws/build/optimus_description/install.log'\n"}
+[10.393536] (-) TimerEvent: {}
+[10.423289] (optimus_description) CommandEnded: {'returncode': 0}
+[10.493607] (-) TimerEvent: {}
+[10.594305] (-) TimerEvent: {}
+[10.650128] (optimus_description) JobEnded: {'identifier': 'optimus_description', 'rc': 0}
+[10.653361] (optimus_bringup) JobStarted: {'identifier': 'optimus_bringup'}
+[10.694551] (-) TimerEvent: {}
+[10.795502] (-) TimerEvent: {}
+[10.896342] (-) TimerEvent: {}
+[10.951746] (optimus_bringup) JobProgress: {'identifier': 'optimus_bringup', 'progress': 'cmake'}
+[10.956700] (optimus_bringup) JobProgress: {'identifier': 'optimus_bringup', 'progress': 'build'}
+[10.963234] (optimus_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/optimus/optimus_v6.3_ws/build/optimus_bringup', '--', '-j4', '-l4'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'optimus'), ('SSH_CLIENT', '192.168.1.27 51314 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/optimus'), ('OLDPWD', '/home/optimus'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b4bace40-0098-43ef-833a-e33b33a25616.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'optimus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/optimus/optimus_v6.3_ws/build/optimus_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.27 51314 192.168.1.31 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble')]), 'shell': False}
+[10.996588] (-) TimerEvent: {}
+[11.097556] (-) TimerEvent: {}
+[11.115868] (optimus_bringup) CommandEnded: {'returncode': 0}
+[11.197687] (-) TimerEvent: {}
+[11.230630] (optimus_bringup) JobProgress: {'identifier': 'optimus_bringup', 'progress': 'install'}
+[11.231935] (optimus_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/optimus/optimus_v6.3_ws/build/optimus_bringup'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'optimus'), ('SSH_CLIENT', '192.168.1.27 51314 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/optimus'), ('OLDPWD', '/home/optimus'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b4bace40-0098-43ef-833a-e33b33a25616.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'optimus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/optimus/optimus_v6.3_ws/build/optimus_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.27 51314 192.168.1.31 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble')]), 'shell': False}
+[11.270340] (optimus_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.271505] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/launch\n'}
+[11.272072] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/launch/optimus_pi_bot.launch.xml\n'}
+[11.272596] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/launch/optimus_pi_bot.launch.py\n'}
+[11.273591] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/launch/camera.launch.xml\n'}
+[11.277128] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/ament_index/resource_index/package_run_dependencies/optimus_bringup\n'}
+[11.277823] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/ament_index/resource_index/parent_prefix_path/optimus_bringup\n'}
+[11.278477] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/environment/ament_prefix_path.sh\n'}
+[11.279182] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/environment/ament_prefix_path.dsv\n'}
+[11.279844] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/environment/path.sh\n'}
+[11.280348] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/environment/path.dsv\n'}
+[11.281947] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/local_setup.bash\n'}
+[11.282805] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/local_setup.sh\n'}
+[11.283512] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/local_setup.zsh\n'}
+[11.284394] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/local_setup.dsv\n'}
+[11.285539] (optimus_bringup) StdoutLine: {'line': b'-- Installing: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.dsv\n'}
+[11.286328] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/ament_index/resource_index/packages/optimus_bringup\n'}
+[11.286875] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/cmake/optimus_bringupConfig.cmake\n'}
+[11.287290] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/cmake/optimus_bringupConfig-version.cmake\n'}
+[11.287692] (optimus_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.xml\n'}
+[11.303779] (optimus_bringup) CommandEnded: {'returncode': 0}
+[11.306229] (-) TimerEvent: {}
+[11.407666] (-) TimerEvent: {}
+[11.508781] (-) TimerEvent: {}
+[11.609589] (-) TimerEvent: {}
+[11.710892] (-) TimerEvent: {}
+[11.812548] (-) TimerEvent: {}
+[11.913614] (-) TimerEvent: {}
+[12.014569] (-) TimerEvent: {}
+[12.117265] (-) TimerEvent: {}
+[12.133242] (optimus_bringup) JobEnded: {'identifier': 'optimus_bringup', 'rc': 0}
+[12.137656] (-) EventReactorShutdown: {}

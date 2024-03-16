@@ -1,0 +1,42 @@
+[0.307s] Invoking command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_interfaces -- -j4 -l4
+[0.530s] [  1%] Built target optimus_interfaces__cpp
+[0.543s] [ 12%] Built target optimus_interfaces__rosidl_generator_c
+[0.622s] [ 12%] Built target ament_cmake_python_copy_optimus_interfaces
+[0.659s] [ 23%] Built target optimus_interfaces__rosidl_typesupport_cpp
+[0.662s] [ 34%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.686s] [ 45%] Built target optimus_interfaces__rosidl_typesupport_introspection_cpp
+[0.763s] [ 56%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c
+[0.777s] [ 67%] Built target optimus_interfaces__rosidl_typesupport_introspection_c
+[0.794s] [ 78%] Built target optimus_interfaces__rosidl_typesupport_c
+[0.879s] [ 78%] Built target optimus_interfaces
+[0.976s] [ 80%] Built target optimus_interfaces__py
+[1.080s] [ 89%] Built target optimus_interfaces__rosidl_generator_py
+[1.193s] [ 92%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.195s] [ 96%] Built target optimus_interfaces__rosidl_typesupport_c__pyext
+[1.211s] [100%] Built target optimus_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.668s] Traceback (most recent call last):
+[1.669s]   File "/home/optimus/optimus_v6.3_ws/build/optimus_interfaces/ament_cmake_python/optimus_interfaces/setup.py", line 1, in <module>
+[1.670s]     from setuptools import find_packages
+[1.671s]   File "/home/optimus/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+[1.672s]     import setuptools.version
+[1.672s]   File "/home/optimus/.local/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+[1.673s]     import pkg_resources
+[1.673s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3243, in <module>
+[1.676s]     def _initialize_master_working_set():
+[1.676s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3226, in _call_aside
+[1.677s]     f(*args, **kwargs)
+[1.677s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3278, in _initialize_master_working_set
+[1.679s]     list(map(working_set.add_entry, sys.path))
+[1.679s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 608, in add_entry
+[1.680s]     for dist in find_distributions(entry, True):
+[1.680s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2063, in find_on_path
+[1.680s]     for dist in factory(fullpath):
+[1.681s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2128, in distributions_from_metadata
+[1.681s]     yield Distribution.from_location(
+[1.682s]   File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2583, in from_location
+[1.683s]     match = EGG_NAME(basename)
+[1.685s] KeyboardInterrupt
+[1.752s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg] Interrupt
+[1.753s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg.dir/all] Interrupt
+[1.754s] gmake: *** [Makefile:146: all] Interrupt
+[1.758s] Invoked command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_interfaces -- -j4 -l4

@@ -1,0 +1,261 @@
+[4.535s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.536s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff82a432b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff82d18be0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff82d18be0>>)
+[4.732s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.734s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.734s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/optimus/optimus_v6.3_ws'
+[4.734s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.785s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.785s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.786s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.787s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.787s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.788s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.788s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.788s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.789s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.790s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.790s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extensions ['ignore', 'ignore_ament_install']
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extension 'ignore'
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extension 'ignore_ament_install'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extensions ['colcon_pkg']
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extension 'colcon_pkg'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extensions ['colcon_meta']
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extension 'colcon_meta'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extensions ['ros']
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_bringup) by extension 'ros'
+[4.805s] DEBUG:colcon.colcon_core.package_identification:Package 'src/optimus_bringup' with type 'ros.ament_cmake' and name 'optimus_bringup'
+[4.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extensions ['ignore', 'ignore_ament_install']
+[4.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extension 'ignore'
+[4.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extension 'ignore_ament_install'
+[4.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extensions ['colcon_pkg']
+[4.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extension 'colcon_pkg'
+[4.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extensions ['colcon_meta']
+[4.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extension 'colcon_meta'
+[4.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extensions ['ros']
+[4.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_description) by extension 'ros'
+[4.810s] DEBUG:colcon.colcon_core.package_identification:Package 'src/optimus_description' with type 'ros.ament_python' and name 'optimus_description'
+[4.810s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[4.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extension 'ignore'
+[4.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extension 'ignore_ament_install'
+[4.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extensions ['colcon_pkg']
+[4.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extension 'colcon_pkg'
+[4.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extensions ['colcon_meta']
+[4.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extension 'colcon_meta'
+[4.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extensions ['ros']
+[4.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/optimus_interfaces) by extension 'ros'
+[4.814s] DEBUG:colcon.colcon_core.package_identification:Package 'src/optimus_interfaces' with type 'ros.ament_cmake' and name 'optimus_interfaces'
+[4.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.327s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/optimus/optimus_v6.3_ws/install
+[5.396s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/humble
+[5.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.801s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_args' from command line to 'None'
+[5.801s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_target' from command line to 'None'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[5.802s] Level 5:colcon.colcon_core.verb:set package 'optimus_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.802s] DEBUG:colcon.colcon_core.verb:Building package 'optimus_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces', 'merge_install': False, 'path': '/home/optimus/optimus_v6.3_ws/src/optimus_interfaces', 'symlink_install': False, 'test_result_base': None}
+[5.862s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_args' from command line to 'None'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_target' from command line to 'None'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_clean_cache' from command line to 'False'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_clean_first' from command line to 'False'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'cmake_force_configure' from command line to 'False'
+[5.863s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'ament_cmake_args' from command line to 'None'
+[5.864s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'catkin_cmake_args' from command line to 'None'
+[5.864s] Level 5:colcon.colcon_core.verb:set package 'optimus_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.864s] DEBUG:colcon.colcon_core.verb:Building package 'optimus_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/optimus/optimus_v6.3_ws/build/optimus_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/optimus/optimus_v6.3_ws/install/optimus_description', 'merge_install': False, 'path': '/home/optimus/optimus_v6.3_ws/src/optimus_description', 'symlink_install': False, 'test_result_base': None}
+[5.923s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_args' from command line to 'None'
+[5.923s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_target' from command line to 'None'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[5.924s] Level 5:colcon.colcon_core.verb:set package 'optimus_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.924s] DEBUG:colcon.colcon_core.verb:Building package 'optimus_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/optimus/optimus_v6.3_ws/build/optimus_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/optimus/optimus_v6.3_ws/install/optimus_bringup', 'merge_install': False, 'path': '/home/optimus/optimus_v6.3_ws/src/optimus_bringup', 'symlink_install': False, 'test_result_base': None}
+[5.985s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.048s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/optimus/optimus_v6.3_ws/src/optimus_interfaces' with build type 'ament_cmake'
+[6.049s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/optimus/optimus_v6.3_ws/src/optimus_interfaces'
+[6.121s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_interfaces -- -j4 -l4
+[8.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_interfaces -- -j4 -l4
+[8.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --install /home/optimus/optimus_v6.3_ws/build/optimus_interfaces
+[9.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimus_interfaces)
+[9.289s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --install /home/optimus/optimus_v6.3_ws/build/optimus_interfaces
+[9.360s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces' for CMake module files
+[9.364s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces' for CMake config files
+[9.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_interfaces', 'cmake_prefix_path')
+[9.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.ps1'
+[9.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.dsv'
+[9.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.sh'
+[9.484s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib'
+[9.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_interfaces', 'ld_library_path_lib')
+[9.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.ps1'
+[9.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.dsv'
+[9.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.sh'
+[9.585s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/bin'
+[9.586s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/pkgconfig/optimus_interfaces.pc'
+[9.587s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/python3.10/site-packages'
+[9.588s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/bin'
+[9.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.ps1'
+[9.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.dsv'
+[9.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.sh'
+[9.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.bash'
+[9.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.zsh'
+[9.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/colcon-core/packages/optimus_interfaces)
+[10.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimus_interfaces)
+[10.612s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces' for CMake module files
+[10.617s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces' for CMake config files
+[10.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_interfaces', 'cmake_prefix_path')
+[10.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.ps1'
+[10.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.dsv'
+[10.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/cmake_prefix_path.sh'
+[10.693s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib'
+[10.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_interfaces', 'ld_library_path_lib')
+[10.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.ps1'
+[10.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.dsv'
+[10.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/hook/ld_library_path_lib.sh'
+[10.763s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/bin'
+[10.763s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/pkgconfig/optimus_interfaces.pc'
+[10.765s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib/python3.10/site-packages'
+[10.765s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/bin'
+[10.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.ps1'
+[10.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.dsv'
+[10.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.sh'
+[10.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.bash'
+[10.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/optimus_interfaces/package.zsh'
+[10.844s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/share/colcon-core/packages/optimus_interfaces)
+[10.845s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/optimus/optimus_v6.3_ws/src/optimus_description' with build type 'ament_python'
+[10.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_description', 'ament_prefix_path')
+[10.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/ament_prefix_path.ps1'
+[10.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/ament_prefix_path.dsv'
+[10.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/ament_prefix_path.sh'
+[10.983s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.079s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/optimus/optimus_v6.3_ws/src/optimus_description'
+[13.269s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/optimus/optimus_v6.3_ws/src/optimus_description': CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup PYTHONPATH=/home/optimus/optimus_v6.3_ws/build/optimus_description/prefix_override:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optimus_description build --build-base /home/optimus/optimus_v6.3_ws/build/optimus_description/build install --record /home/optimus/optimus_v6.3_ws/build/optimus_description/install.log --single-version-externally-managed
+[18.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/optimus/optimus_v6.3_ws/src/optimus_description' returned '0': CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup PYTHONPATH=/home/optimus/optimus_v6.3_ws/build/optimus_description/prefix_override:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optimus_description build --build-base /home/optimus/optimus_v6.3_ws/build/optimus_description/build install --record /home/optimus/optimus_v6.3_ws/build/optimus_description/install.log --single-version-externally-managed
+[18.957s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description' for CMake module files
+[18.961s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description' for CMake config files
+[18.968s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib'
+[18.969s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description/bin'
+[18.970s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/pkgconfig/optimus_description.pc'
+[18.971s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages'
+[18.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_description', 'pythonpath')
+[19.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/pythonpath.ps1'
+[19.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/pythonpath.dsv'
+[19.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/hook/pythonpath.sh'
+[19.135s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_description/bin'
+[19.136s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimus_description)
+[19.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/package.ps1'
+[19.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/package.dsv'
+[19.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/package.sh'
+[19.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/package.bash'
+[19.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_description/share/optimus_description/package.zsh'
+[19.310s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/optimus/optimus_v6.3_ws/install/optimus_description/share/colcon-core/packages/optimus_description)
+[19.312s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/optimus/optimus_v6.3_ws/src/optimus_bringup' with build type 'ament_cmake'
+[19.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/optimus/optimus_v6.3_ws/src/optimus_bringup'
+[19.432s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.432s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/optimus/optimus_v6.3_ws/build/optimus_bringup': AMENT_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_bringup -- -j4 -l4
+[20.197s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/optimus/optimus_v6.3_ws/build/optimus_bringup' returned '0': AMENT_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --build /home/optimus/optimus_v6.3_ws/build/optimus_bringup -- -j4 -l4
+[20.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/optimus/optimus_v6.3_ws/build/optimus_bringup': AMENT_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --install /home/optimus/optimus_v6.3_ws/build/optimus_bringup
+[20.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimus_bringup)
+[20.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/optimus/optimus_v6.3_ws/build/optimus_bringup' returned '0': AMENT_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble /usr/bin/cmake --install /home/optimus/optimus_v6.3_ws/build/optimus_bringup
+[20.616s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup' for CMake module files
+[20.621s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup' for CMake config files
+[20.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_bringup', 'cmake_prefix_path')
+[20.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.ps1'
+[20.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.dsv'
+[20.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.sh'
+[20.855s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/bin'
+[20.856s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/lib/pkgconfig/optimus_bringup.pc'
+[20.858s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/lib/python3.10/site-packages'
+[20.860s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/bin'
+[21.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.ps1'
+[21.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.dsv'
+[21.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.sh'
+[21.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.bash'
+[21.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.zsh'
+[21.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/colcon-core/packages/optimus_bringup)
+[21.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optimus_bringup)
+[21.383s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup' for CMake module files
+[21.386s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup' for CMake config files
+[21.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('optimus_bringup', 'cmake_prefix_path')
+[21.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.ps1'
+[21.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.dsv'
+[21.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/hook/cmake_prefix_path.sh'
+[21.496s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/bin'
+[21.498s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/lib/pkgconfig/optimus_bringup.pc'
+[21.500s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/lib/python3.10/site-packages'
+[21.501s] Level 1:colcon.colcon_core.environment:checking '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/bin'
+[21.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.ps1'
+[21.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.dsv'
+[21.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.sh'
+[21.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.bash'
+[21.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/optimus_bringup/package.zsh'
+[21.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/optimus/optimus_v6.3_ws/install/optimus_bringup/share/colcon-core/packages/optimus_bringup)
+[21.668s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.669s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.669s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.670s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.797s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.798s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.798s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.908s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.023s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/optimus/optimus_v6.3_ws/install/local_setup.ps1'
+[22.027s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/optimus/optimus_v6.3_ws/install/_local_setup_util_ps1.py'
+[22.033s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/optimus/optimus_v6.3_ws/install/setup.ps1'
+[22.142s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/optimus/optimus_v6.3_ws/install/local_setup.sh'
+[22.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/optimus/optimus_v6.3_ws/install/_local_setup_util_sh.py'
+[22.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/optimus/optimus_v6.3_ws/install/setup.sh'
+[22.267s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/optimus/optimus_v6.3_ws/install/local_setup.bash'
+[22.270s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/optimus/optimus_v6.3_ws/install/setup.bash'
+[22.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/optimus/optimus_v6.3_ws/install/local_setup.zsh'
+[22.396s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/optimus/optimus_v6.3_ws/install/setup.zsh'

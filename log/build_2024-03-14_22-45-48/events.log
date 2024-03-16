@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.001075] (optimus_interfaces) JobQueued: {'identifier': 'optimus_interfaces', 'dependencies': OrderedDict()}
+[0.002115] (optimus_description) JobQueued: {'identifier': 'optimus_description', 'dependencies': OrderedDict([('optimus_interfaces', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces')])}
+[0.002702] (optimus_bringup) JobQueued: {'identifier': 'optimus_bringup', 'dependencies': OrderedDict([('optimus_interfaces', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces'), ('optimus_description', '/home/optimus/optimus_v6.3_ws/install/optimus_description')])}
+[0.003080] (optimus_interfaces) JobStarted: {'identifier': 'optimus_interfaces'}
+[0.099142] (-) TimerEvent: {}
+[0.200162] (-) TimerEvent: {}
+[0.296987] (optimus_interfaces) JobProgress: {'identifier': 'optimus_interfaces', 'progress': 'cmake'}
+[0.300651] (optimus_interfaces) JobProgress: {'identifier': 'optimus_interfaces', 'progress': 'build'}
+[0.300885] (-) TimerEvent: {}
+[0.304652] (optimus_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'optimus'), ('SSH_CLIENT', '192.168.1.27 49434 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/optimus'), ('OLDPWD', '/home/optimus'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-91a0135f-556d-4678-85fe-973cf877e345.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'optimus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/optimus/optimus_v6.3_ws/build/optimus_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.27 49434 192.168.1.31 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_description:/opt/ros/humble')]), 'shell': False}
+[0.401206] (-) TimerEvent: {}
+[0.502520] (-) TimerEvent: {}
+[0.532550] (optimus_interfaces) StdoutLine: {'line': b'[  1%] Built target optimus_interfaces__cpp\n'}
+[0.545663] (optimus_interfaces) StdoutLine: {'line': b'[ 12%] Built target optimus_interfaces__rosidl_generator_c\n'}
+[0.603062] (-) TimerEvent: {}
+[0.624447] (optimus_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_optimus_interfaces\n'}
+[0.661543] (optimus_interfaces) StdoutLine: {'line': b'[ 23%] Built target optimus_interfaces__rosidl_typesupport_cpp\n'}
+[0.665314] (optimus_interfaces) StdoutLine: {'line': b'[ 34%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.689200] (optimus_interfaces) StdoutLine: {'line': b'[ 45%] Built target optimus_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.703225] (-) TimerEvent: {}
+[0.765714] (optimus_interfaces) StdoutLine: {'line': b'[ 56%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.779855] (optimus_interfaces) StdoutLine: {'line': b'[ 67%] Built target optimus_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.796381] (optimus_interfaces) StdoutLine: {'line': b'[ 78%] Built target optimus_interfaces__rosidl_typesupport_c\n'}
+[0.803397] (-) TimerEvent: {}
+[0.881530] (optimus_interfaces) StdoutLine: {'line': b'[ 78%] Built target optimus_interfaces\n'}
+[0.903617] (-) TimerEvent: {}
+[0.979112] (optimus_interfaces) StdoutLine: {'line': b'[ 80%] Built target optimus_interfaces__py\n'}
+[1.003845] (-) TimerEvent: {}
+[1.082307] (optimus_interfaces) StdoutLine: {'line': b'[ 89%] Built target optimus_interfaces__rosidl_generator_py\n'}
+[1.104050] (-) TimerEvent: {}
+[1.196119] (optimus_interfaces) StdoutLine: {'line': b'[ 92%] Built target optimus_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.198315] (optimus_interfaces) StdoutLine: {'line': b'[ 96%] Built target optimus_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.204242] (-) TimerEvent: {}
+[1.213584] (optimus_interfaces) StdoutLine: {'line': b'[100%] Built target optimus_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.304420] (-) TimerEvent: {}
+[1.405180] (-) TimerEvent: {}
+[1.505920] (-) TimerEvent: {}
+[1.606588] (-) TimerEvent: {}
+[1.670592] (optimus_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.671765] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/optimus_v6.3_ws/build/optimus_interfaces/ament_cmake_python/optimus_interfaces/setup.py", line 1, in <module>\n'}
+[1.673107] (optimus_interfaces) StderrLine: {'line': b'    from setuptools import find_packages\n'}
+[1.673784] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>\n'}
+[1.674772] (optimus_interfaces) StderrLine: {'line': b'    import setuptools.version\n'}
+[1.675359] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>\n'}
+[1.675953] (optimus_interfaces) StderrLine: {'line': b'    import pkg_resources\n'}
+[1.676391] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3243, in <module>\n'}
+[1.678787] (optimus_interfaces) StderrLine: {'line': b'    def _initialize_master_working_set():\n'}
+[1.679307] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3226, in _call_aside\n'}
+[1.680180] (optimus_interfaces) StderrLine: {'line': b'    f(*args, **kwargs)\n'}
+[1.680596] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3278, in _initialize_master_working_set\n'}
+[1.681749] (optimus_interfaces) StderrLine: {'line': b'    list(map(working_set.add_entry, sys.path))\n'}
+[1.682346] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 608, in add_entry\n'}
+[1.682710] (optimus_interfaces) StderrLine: {'line': b'    for dist in find_distributions(entry, True):\n'}
+[1.683005] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2063, in find_on_path\n'}
+[1.683417] (optimus_interfaces) StderrLine: {'line': b'    for dist in factory(fullpath):\n'}
+[1.683735] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2128, in distributions_from_metadata\n'}
+[1.684349] (optimus_interfaces) StderrLine: {'line': b'    yield Distribution.from_location(\n'}
+[1.684804] (optimus_interfaces) StderrLine: {'line': b'  File "/home/optimus/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2583, in from_location\n'}
+[1.685674] (optimus_interfaces) StderrLine: {'line': b'    match = EGG_NAME(basename)\n'}
+[1.687261] (optimus_interfaces) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[1.706855] (-) TimerEvent: {}
+[1.755001] (optimus_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg] Interrupt\n'}
+[1.755864] (optimus_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_optimus_interfaces_egg.dir/all] Interrupt\n'}
+[1.756846] (optimus_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[1.760958] (optimus_interfaces) CommandEnded: {'returncode': -2}
+[1.807075] (-) TimerEvent: {}
+[1.907807] (-) TimerEvent: {}
+[2.008562] (-) TimerEvent: {}
+[2.109260] (-) TimerEvent: {}
+[2.209959] (-) TimerEvent: {}
+[2.310723] (-) TimerEvent: {}
+[2.411441] (-) TimerEvent: {}
+[2.512284] (-) TimerEvent: {}
+[2.613057] (-) TimerEvent: {}
+[2.714296] (-) TimerEvent: {}
+[2.815700] (-) TimerEvent: {}
+[2.818214] (optimus_interfaces) JobEnded: {'identifier': 'optimus_interfaces', 'rc': 'SIGINT'}
+[2.829955] (optimus_description) JobSkipped: {'identifier': 'optimus_description'}
+[2.830193] (optimus_bringup) JobSkipped: {'identifier': 'optimus_bringup'}
+[2.830297] (-) EventReactorShutdown: {}

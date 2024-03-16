@@ -1,0 +1,87 @@
+[0.000000] (-) TimerEvent: {}
+[0.001042] (-) JobUnselected: {'identifier': 'optimus_bringup'}
+[0.001881] (-) JobUnselected: {'identifier': 'optimus_interfaces'}
+[0.002565] (optimus_description) JobQueued: {'identifier': 'optimus_description', 'dependencies': OrderedDict([('optimus_interfaces', '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces')])}
+[0.002972] (optimus_description) JobStarted: {'identifier': 'optimus_description'}
+[0.099158] (-) TimerEvent: {}
+[0.199878] (-) TimerEvent: {}
+[0.300644] (-) TimerEvent: {}
+[0.401480] (-) TimerEvent: {}
+[0.502232] (-) TimerEvent: {}
+[0.603052] (-) TimerEvent: {}
+[0.703790] (-) TimerEvent: {}
+[0.804488] (-) TimerEvent: {}
+[0.905183] (-) TimerEvent: {}
+[1.005857] (-) TimerEvent: {}
+[1.106525] (-) TimerEvent: {}
+[1.207234] (-) TimerEvent: {}
+[1.308025] (-) TimerEvent: {}
+[1.408797] (-) TimerEvent: {}
+[1.509666] (-) TimerEvent: {}
+[1.610759] (-) TimerEvent: {}
+[1.711865] (-) TimerEvent: {}
+[1.813255] (-) TimerEvent: {}
+[1.914371] (-) TimerEvent: {}
+[2.015383] (-) TimerEvent: {}
+[2.116207] (-) TimerEvent: {}
+[2.217044] (-) TimerEvent: {}
+[2.317741] (-) TimerEvent: {}
+[2.418519] (-) TimerEvent: {}
+[2.519170] (-) TimerEvent: {}
+[2.619856] (-) TimerEvent: {}
+[2.720502] (-) TimerEvent: {}
+[2.821165] (-) TimerEvent: {}
+[2.921874] (-) TimerEvent: {}
+[3.022641] (-) TimerEvent: {}
+[3.123366] (-) TimerEvent: {}
+[3.224077] (-) TimerEvent: {}
+[3.324818] (-) TimerEvent: {}
+[3.425604] (-) TimerEvent: {}
+[3.500228] (optimus_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/optimus/optimus_v6.3_ws/build/optimus_description/build', '--no-deps', 'install_data'], 'cwd': '/home/optimus/optimus_v6.3_ws/build/optimus_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'optimus', 'SSH_CLIENT': '192.168.1.27 50631 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/optimus', 'OLDPWD': '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6', 'TERM_PROGRAM_VERSION': '1.87.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c0061d81-f40c-469e-9a40-924b295c2862.sock', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'optimus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/optimus/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_bringup:/home/optimus/optimus_v6.3_ws/install/optimus_description:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/optimus/optimus_v6.3_ws/build/optimus_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.27 50631 192.168.1.31 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/optimus/optimus_v6.3_ws/build/optimus_description/prefix_override:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages:/home/optimus/optimus_v6.3_ws/install/optimus_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/optimus/optimus_v6.3_ws/install/optimus_interfaces:/home/optimus/optimus_v6.3_ws/install/optimus_bringup'}, 'shell': False}
+[3.525772] (-) TimerEvent: {}
+[3.626630] (-) TimerEvent: {}
+[3.727364] (-) TimerEvent: {}
+[3.828073] (-) TimerEvent: {}
+[3.928810] (-) TimerEvent: {}
+[4.029478] (-) TimerEvent: {}
+[4.130172] (-) TimerEvent: {}
+[4.230839] (-) TimerEvent: {}
+[4.331546] (-) TimerEvent: {}
+[4.432228] (-) TimerEvent: {}
+[4.532900] (-) TimerEvent: {}
+[4.633612] (-) TimerEvent: {}
+[4.703909] (optimus_description) StdoutLine: {'line': b'running develop\n'}
+[4.733773] (-) TimerEvent: {}
+[4.834510] (-) TimerEvent: {}
+[4.935171] (-) TimerEvent: {}
+[5.035837] (-) TimerEvent: {}
+[5.136525] (-) TimerEvent: {}
+[5.237212] (-) TimerEvent: {}
+[5.337870] (-) TimerEvent: {}
+[5.438598] (-) TimerEvent: {}
+[5.444132] (optimus_description) StdoutLine: {'line': b'running egg_info\n'}
+[5.445082] (optimus_description) StdoutLine: {'line': b'writing optimus_description.egg-info/PKG-INFO\n'}
+[5.446171] (optimus_description) StdoutLine: {'line': b'writing dependency_links to optimus_description.egg-info/dependency_links.txt\n'}
+[5.447172] (optimus_description) StdoutLine: {'line': b'writing entry points to optimus_description.egg-info/entry_points.txt\n'}
+[5.448141] (optimus_description) StdoutLine: {'line': b'writing requirements to optimus_description.egg-info/requires.txt\n'}
+[5.449130] (optimus_description) StdoutLine: {'line': b'writing top-level names to optimus_description.egg-info/top_level.txt\n'}
+[5.456979] (optimus_description) StdoutLine: {'line': b"reading manifest file 'optimus_description.egg-info/SOURCES.txt'\n"}
+[5.461193] (optimus_description) StdoutLine: {'line': b"writing manifest file 'optimus_description.egg-info/SOURCES.txt'\n"}
+[5.467596] (optimus_description) StdoutLine: {'line': b'running build_ext\n'}
+[5.468471] (optimus_description) StdoutLine: {'line': b'Creating /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/python3.10/site-packages/optimus-description.egg-link (link to .)\n'}
+[5.471840] (optimus_description) StdoutLine: {'line': b'Installing camera script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.472945] (optimus_description) StdoutLine: {'line': b'Installing lifecycle_manager script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.473772] (optimus_description) StdoutLine: {'line': b'Installing motor_driver script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.474754] (optimus_description) StdoutLine: {'line': b'Installing optimus_pi script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.475647] (optimus_description) StdoutLine: {'line': b'Installing ps4_controller script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.476763] (optimus_description) StdoutLine: {'line': b'Installing ultra_sonic_sensor script to /home/optimus/optimus_v6.3_ws/install/optimus_description/lib/optimus_description\n'}
+[5.478025] (optimus_description) StdoutLine: {'line': b'\n'}
+[5.478635] (optimus_description) StdoutLine: {'line': b'Installed /home/optimus/optimus_v6.3_ws/build/optimus_description\n'}
+[5.479040] (optimus_description) StdoutLine: {'line': b'running install_data\n'}
+[5.538850] (-) TimerEvent: {}
+[5.624829] (optimus_description) CommandEnded: {'returncode': 0}
+[5.639074] (-) TimerEvent: {}
+[5.740523] (-) TimerEvent: {}
+[5.845005] (-) TimerEvent: {}
+[5.934089] (optimus_description) JobEnded: {'identifier': 'optimus_description', 'rc': 0}
+[5.937636] (-) EventReactorShutdown: {}

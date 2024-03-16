@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/action/detail/control_optimus__type_support.c.o"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/action/detail/control_optimus__type_support.c.o.d"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/motor_driver__type_support.c.o"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/motor_driver__type_support.c.o.d"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.c.o"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.c.o.d"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/srv/detail/autonomous_driver__type_support.c.o"
+  "CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/optimus_interfaces/srv/detail/autonomous_driver__type_support.c.o.d"
+  "liboptimus_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "liboptimus_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/action/detail/control_optimus__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/action/detail/control_optimus__type_support.c"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/motor_driver__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/motor_driver__type_support.c"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/ultra_sonic_range__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/msg/detail/ultra_sonic_range__type_support.c"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/srv/detail/autonomous_driver__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/optimus_interfaces/srv/detail/autonomous_driver__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/optimus_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

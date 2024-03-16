@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from optimus_interfaces/action/ControlOptimus.action
+// generated code does not contain a copyright notice
+
+
+module optimus_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "GOAL")
+    struct ControlOptimus_Goal {
+      int64 left_motor_1;
+
+      int64 left_motor_2;
+
+      int64 right_motor_1;
+
+      int64 right_motor_2;
+
+      boolean is_autonomous;
+
+      boolean is_recording;
+    };
+    @verbatim (language="comment", text=
+      "RESULT")
+    struct ControlOptimus_Result {
+      string message;
+
+      boolean is_autonomous;
+    };
+    @verbatim (language="comment", text=
+      "FEEDBACK")
+    struct ControlOptimus_Feedback {
+      string message;
+    };
+  };
+};
