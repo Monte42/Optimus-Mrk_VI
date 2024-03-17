@@ -16,7 +16,7 @@ set(_optimus_interfaces_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT optimus_interfaces_FIND_QUIETLY)
-  message(STATUS "Found optimus_interfaces: 0.0.0 (${optimus_interfaces_DIR})")
+  message(STATUS "Found optimus_interfaces: 6.3.0 (${optimus_interfaces_DIR})")
 endif()
 
 # warn when using a deprecated package

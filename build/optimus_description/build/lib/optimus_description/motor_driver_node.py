@@ -3,7 +3,6 @@ import time
 import rclpy
 import RPi.GPIO as GPIO
 from rclpy.node import Node
-from functools import partial
 
 from optimus_interfaces.msg import MotorDriver
 from optimus_interfaces.srv import AutonomousDriver

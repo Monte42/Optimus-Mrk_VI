@@ -17,6 +17,7 @@ from lifecycle_msgs.msg import Transition
 # Node is needed to communicate with other node and Controller can't talk to nodes
 # If you intitiate the controller, the prog stops & the node wont start
 # If you intitiate the node, the prog stops & the controller wont start
+# However this will cause a warning for there being two publishers
 class MainController(Node, Controller):
     def __init__(self, **kwargs):
         Controller.__init__(self, **kwargs)
@@ -101,7 +102,6 @@ class MainController(Node, Controller):
     # ===============       https://github.com/ArturSpirin/pyPS4Controller/blob/master/README.md
     def on_x_press(self):
         self.is_autonomous_ = not self.is_autonomous_ 
-        self.get_logger().info(f"stuo {self.is_autonomous_}")
         if self.is_autonomous_:
             self.get_logger().info("Activating autonomous drive")
             self.change_lifecycle_node_state('optimus_ultra_sonic_sensor', 3, 'activate')
@@ -115,6 +115,7 @@ class MainController(Node, Controller):
         if self.is_recording_:
             self.get_logger().info("Activating recording")
             self.change_lifecycle_node_state('optimus_camera', 3, 'activate')
+            self.get_logger().info("Activating recording 2")
         else:
             self.get_logger().info("Deactivating recording")
             self.change_lifecycle_node_state('optimus_camera', 4, 'deactivate')

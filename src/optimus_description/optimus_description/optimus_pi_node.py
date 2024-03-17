@@ -44,9 +44,9 @@ class OptimusPiNode(Node):
     # Camera Control   -> Msg from camera, opens live feed on screen if connected
     # +++++++++++++++    
     def open_optimus_view_cb(self, msg):
-        img_converted_back_to_cv = self.cv_bridge_obj_.imgmsg_to_cv2(msg)
-        cv2.imshow('camera', img_converted_back_to_cv)
-        cv2.waitKey(1)
+        # img_converted_back_to_cv = self.cv_bridge_obj_.imgmsg_to_cv2(msg)
+        # cv2.imshow('camera', img_converted_back_to_cv)
+        # cv2.waitKey(1)
         self.get_logger().info('img received')
 
 
@@ -94,7 +94,7 @@ class OptimusPiNode(Node):
             self.get_logger().info('Turning off Camera')
             self.destroy_subscription(self.camera_subscriber_)
             self.camera_subscriber_ = None
-            cv2.destroyAllWindows()
+
         # Check for autonomous drive
         if goal_handle.request.is_autonomous: # Create subscription
             self.is_autonomous_ = True
@@ -159,17 +159,17 @@ class OptimusPiNode(Node):
         left_track_dist = msg.left_track_dist
         right_track_dist = msg.right_track_dist
         new_cmd = 0
-        if right_track_dist < 12 and left_track_dist < 12:
+        if right_track_dist < 15 and left_track_dist < 15:
             self.get_logger().info("Turn Around")
             new_cmd = 5
-        elif left_track_dist < 30 or right_track_dist < 30:
+        elif left_track_dist < 35 or right_track_dist < 35:
             if left_track_dist < right_track_dist:
                 self.get_logger().info("Turn Hard Right")
                 new_cmd = 4
             else:
                 self.get_logger().info("Turn Hard Left")
                 new_cmd = 3
-        elif left_track_dist < 30 or right_track_dist < 30:
+        elif left_track_dist < 45 or right_track_dist < 45:
             if left_track_dist < right_track_dist:
                 self.get_logger().info("Turn Soft Right")
                 new_cmd = 2
@@ -185,6 +185,6 @@ def main(args=None):
     node = OptimusPiNode()
     rclpy.spin(node)
     rclpy.shutdown()
-        
 if __name__ == "__main__":
     main()
+    cv2.destroyAllWindows()

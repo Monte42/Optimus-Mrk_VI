@@ -55,9 +55,10 @@ class CameraNode(LifecycleNode):
 
     def on_deactivate(self, state: LifecycleState):
         try:
-            # a = 10 / 0 # <-- this is to test the on_error
+            # a = 10 / 0 # <-- this is to test the on_error / uncomment to see Excetion called
             self.get_logger().info("Camera Node Deactivated...")
             self.destroy_timer(self.camera_timer_)
+            self.camera_timer_ = None
             self.camera_node_cleanup()
             return super().on_deactivate(state)
         except Exception as e:
@@ -88,31 +89,38 @@ class CameraNode(LifecycleNode):
     # Camera Funcs
     # ==============
     def capture_and_publish_image_cb(self):
+        # Take still frame and unpack data
         returned_value, captured_frame = self.video_capture_obj_.read()
+        # if capture was successful
         if returned_value == True:
+            # Cam is upside down so I had to Flip
             captured_frame = cv2.rotate(captured_frame, cv2.ROTATE_180)
+            # add frame to an array to writen later
             self.all_frames_.append(captured_frame)
+            # Convert and send image to be displayed 
             image_to_transmit = self.cv_bridge_obj_.cv2_to_imgmsg(captured_frame)
             self.camera_publisher_.publish(image_to_transmit)
             self.get_logger().info('Image Sent')
                 
     def camera_node_cleanup(self):
-        self.destroy_lifecycle_publisher(self.camera_publisher_)
-        self.destroy_timer(self.camera_timer_)
+        # destroy publicher and timer
         if len(self.all_frames_) > 0:
             self.get_logger().info('saving file..')
+            # save / overwite file - can add time to avoid overwrite
+            # setup
             filename = 'optimus_eye.avi'
             fourccCode = cv2.VideoWriter_fourcc(*'DIVX')
             new_video = cv2.VideoWriter(filename, fourccCode, self.camera_fps_, self.camera_dimensions_)
+            # write frame by frame
             for frame in self.all_frames_:
                 new_video.write(frame)
+            # reset video array
             self.all_frames_ = []
+            # release cv objs and close 
             new_video.release()
             self.video_capture_obj_.release()
             cv2.destroyAllWindows()
-            self.get_logger().info('file saved')
-            
-                
+            self.get_logger().info('file saved')      
                 
 
 def main(args=None):

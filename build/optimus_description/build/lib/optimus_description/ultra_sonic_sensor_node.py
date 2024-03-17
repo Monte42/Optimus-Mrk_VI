@@ -4,7 +4,6 @@ import rclpy
 import RPi.GPIO as GPIO
 from rclpy.lifecycle import LifecycleNode
 from rclpy.lifecycle.node import LifecycleState, TransitionCallbackReturn
-
 from optimus_interfaces.msg import UltraSonicRange
 
 
@@ -18,8 +17,7 @@ rht_echo_pin = 13
 MAX_DISTANCE = 220
 time_out = MAX_DISTANCE * 60
 
-
-
+# Setup headerpins
 def setup():
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(lft_trig_pin, GPIO.OUT)
@@ -28,17 +26,13 @@ def setup():
     GPIO.setup(rht_echo_pin, GPIO.IN)
 
 
-
-
 class Ultra_sonic_sensor_node(LifecycleNode):
     def __init__(self):
         super().__init__("ultra_sonic_sensor")
         self.range_publisher_ = None
         self.scan_timer_ = None
-        
         self.get_logger().info("Ultra Sonsic Sensor Unconfigured...")
 
-    
     
     # ================
     # Lifecycle Funcs
@@ -123,7 +117,6 @@ class Ultra_sonic_sensor_node(LifecycleNode):
             msg.debug_message = "Ultra Sonic Board Status: GOOD"
         else:
             msg.debug_message = "Ultra Sonic Board Status: BAD"
-        # Publish
         self.range_publisher_.publish(msg)
 
     def get_pulse_time(self, pin, level, time_out):

@@ -16,7 +16,7 @@ set(_optimus_bringup_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT optimus_bringup_FIND_QUIETLY)
-  message(STATUS "Found optimus_bringup: 0.0.0 (${optimus_bringup_DIR})")
+  message(STATUS "Found optimus_bringup: 6.3.0 (${optimus_bringup_DIR})")
 endif()
 
 # warn when using a deprecated package

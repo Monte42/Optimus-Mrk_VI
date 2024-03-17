@@ -58,6 +58,7 @@ class CameraNode(LifecycleNode):
             # a = 10 / 0 # <-- this is to test the on_error / uncomment to see Excetion called
             self.get_logger().info("Camera Node Deactivated...")
             self.destroy_timer(self.camera_timer_)
+            self.camera_timer_ = None
             self.camera_node_cleanup()
             return super().on_deactivate(state)
         except Exception as e:
@@ -103,8 +104,6 @@ class CameraNode(LifecycleNode):
                 
     def camera_node_cleanup(self):
         # destroy publicher and timer
-        self.destroy_lifecycle_publisher(self.camera_publisher_)
-        self.destroy_timer(self.camera_timer_)
         if len(self.all_frames_) > 0:
             self.get_logger().info('saving file..')
             # save / overwite file - can add time to avoid overwrite
@@ -121,9 +120,7 @@ class CameraNode(LifecycleNode):
             new_video.release()
             self.video_capture_obj_.release()
             cv2.destroyAllWindows()
-            self.get_logger().info('file saved')
-            
-                
+            self.get_logger().info('file saved')      
                 
 
 def main(args=None):

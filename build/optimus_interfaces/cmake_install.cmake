@@ -248,7 +248,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/optimus_interfaces-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/optimus/optimus_v6.3_ws/build/optimus_interfaces/ament_cmake_python/optimus_interfaces/optimus_interfaces.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/optimus_interfaces-6.3.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/optimus/optimus_v6.3_ws/build/optimus_interfaces/ament_cmake_python/optimus_interfaces/optimus_interfaces.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

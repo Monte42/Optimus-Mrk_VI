@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "optimus_bringup")
-set(optimus_bringup_VERSION "0.0.0")
-set(optimus_bringup_MAINTAINER "optimus <optimus@todo.todo>")
+set(optimus_bringup_VERSION "6.3.0")
+set(optimus_bringup_MAINTAINER "Gary DuMond <garyd@legendgary.com>")
 set(optimus_bringup_BUILD_DEPENDS "optimus_description")
 set(optimus_bringup_BUILDTOOL_DEPENDS "ament_cmake")
 set(optimus_bringup_BUILD_EXPORT_DEPENDS "optimus_description")

@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "optimus_interfaces")
-set(optimus_interfaces_VERSION "0.0.0")
-set(optimus_interfaces_MAINTAINER "optimus <optimus@todo.todo>")
+set(optimus_interfaces_VERSION "6.3.0")
+set(optimus_interfaces_MAINTAINER "Gary DuMond <garyd@legendgary.com>")
 set(optimus_interfaces_BUILD_DEPENDS "rosidl_default_generators")
 set(optimus_interfaces_BUILDTOOL_DEPENDS "ament_cmake")
 set(optimus_interfaces_BUILD_EXPORT_DEPENDS )

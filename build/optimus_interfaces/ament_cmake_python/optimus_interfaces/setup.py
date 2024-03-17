@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='optimus_interfaces',
-    version='0.0.0',
+    version='6.3.0',
     packages=find_packages(
         include=('optimus_interfaces', 'optimus_interfaces.*')),
 )
